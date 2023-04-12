@@ -13,13 +13,47 @@ body {
   font-weight: 400;
   color: #555;
 }
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff8f2;
+  height: 9.6rem;
+  padding: 0 0.48rem;
+}
+.logo {
+  height: 4.5rem;
+}
+
+.main-nav {
+  list-style: none;
+
+  display: flex;
+  gap: 3.2rem;
+}
+.main-nav a {
+  text-decoration: none;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline block;
+  padding-top: 50%;
+  color: #555;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  transition: all 0.4s;
+  color: #cf711f;
+}
 .hero-section {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  background-color: #fff8f2;
+  padding: 4.8rem 0 9.6rem 0;
 }
 .hero {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -78,4 +112,61 @@ body {
 }
 .margin-right {
   margin-right: 1.6rem;
+}
+/* Mobile Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.food {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.food img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.food h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.food p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .food {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+  .food {
+    width: 23%;
+  }
 }
