@@ -369,7 +369,7 @@ textarea {
 }
 
 /* Desktop Styles */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
   .container {
     flex-direction: row;
     justify-content: space-between;
