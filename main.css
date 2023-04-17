@@ -14,7 +14,6 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
 }
 
 .header {
@@ -82,6 +81,8 @@ body {
 }
 
 .hero-img {
+  background-size: cover;
+  margin-top: 10px;
   width: 100%;
   margin-bottom: 3.2rem;
 }
@@ -136,7 +137,13 @@ body {
 }
 
 .menu-title {
+  margin-bottom: 10px;
   text-align: center;
+}
+.menu-title h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #e67e22;
 }
 
 .container {
@@ -168,17 +175,20 @@ body {
 }
 
 .food h3 {
+  color: black;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .food p {
-  font-weight: 300;
+  font-weight: 800;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-align: center;
   margin-bottom: 10px;
+}
+.food-description {
   color: black;
 }
 
@@ -187,9 +197,48 @@ body {
   font-size: 20px;
   color: black;
 }
+
+.about-section {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fdf2e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 500px;
+}
+
+.about-image {
+  background-image: url("images/momo.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+}
+
+.about-image img {
+  display: none;
+}
+
+.about-content {
+  text-align: center;
+  width: 50%;
+  padding: 0 50px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .footer {
   padding: 40px;
-  background-color: #fdf2e9;
+  background-color: #e7b88f;
 }
 .footer .social {
   text-align: center;
@@ -197,6 +246,7 @@ body {
   color: white;
 }
 .footer .social a {
+  text-decoration: none;
   font-size: 24px;
   color: inherit;
   border: 1px solid #555;
@@ -208,7 +258,20 @@ body {
   margin: 0.7px;
   opacity: 0.45;
 }
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 .footer .social a:hover {
+  color: #e67e22;
   opacity: 1;
 }
 .footer ul {
